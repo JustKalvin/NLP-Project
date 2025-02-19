@@ -49,12 +49,12 @@ st.markdown(page_bg_color, unsafe_allow_html=True)
 # Load model dan tokenizer
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("./NLP_FINAL_MODEL.h5")  # Ganti dengan path model Anda
+    model = tf.keras.models.load_model("./assets/NLP_FINAL_MODEL.h5")  # Ganti dengan path model Anda
     return model
 
 @st.cache_resource
 def load_tokenizer():
-  with open("./tokenizer.pkl", "rb") as handle:
+  with open("./assets/tokenizer.pkl", "rb") as handle:
     tokenizer = pickle.load(handle)  # Load tokenizer dari file
   return tokenizer  # Ganti dengan tokenizer yang sudah di-train
 
