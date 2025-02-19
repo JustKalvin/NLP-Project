@@ -30,7 +30,7 @@ def get_base64(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Ganti path ke gambar kamu
-image_base64 = get_base64("./purple-mountain-landscape.jpg")
+image_base64 = get_base64("./assets/purple-mountain-landscape.jpg")
 
 # Masukin ke CSS
 page_bg_color = f"""
