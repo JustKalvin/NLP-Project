@@ -60,7 +60,7 @@ def load_tokenizer():
 
 @st.cache_resource
 def load_tfidf():
-    data = pd.read_csv('./Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv')
+    data = pd.read_csv('./assets/Bitext_Sample_Customer_Support_Training_Dataset_27K_responses-v11.csv')
     vectorizer = TfidfVectorizer()
     vectorizer.fit(data["instruction"])
     return vectorizer, data
